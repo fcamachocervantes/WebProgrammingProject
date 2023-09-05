@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.excited {
+    text-shadow: 2px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px blue;
+}
+
+#knowSelectors {
+    font-style: italic;
+    color: purple;
+    font-size: 2em;
+}
+
+.warning {
+    color: red;
+    font-family: cursive;
+}
+
+#remember {
+    background-color: yellow;
+    font-family: sans-serif;
+}
+
+.standout {
+    border-radius: 5px;
+    border-width: 2px;
+    border-bottom-width: 5px;
+    border-color: blue;
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+    border-left-style: solid;
+    border-right-style: solid;
+    font-weight: bold;
+}
+
+ul {
+    background-color: #ff9999;
+}
+
+li {
+    list-style-type: square;
+    background-color: #ffe5e5;
+}

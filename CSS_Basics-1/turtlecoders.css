@@ -1,0 +1,59 @@
+/*
+	Style for Unit 2, Part IV
+
+/* Styles here for the body */
+
+/* Styling for the wrapper and content includes
+
+    The wrapper is centered and takes 80% of the space
+    The wrapper background color is white
+    The wrapper should not be visible above the corners of header USE MY WORDING
+    There is some space between the content area text and the wrapper border
+	Set a minimum height (550 px) and width (600 px) so that scroll bars 
+	appear if the window size is too small.
+*/
+
+
+/* Styling for the header includes
+
+    A background color (#d5edb3) 
+    The company name is centered
+    The company name has a shadow below and to the right.
+    A rounded border (I used a color of #333333 and rounded 15px)
+	A logo on the right side (hint: use background-image... google!)
+*/
+
+
+/* Styling for the nav menu includes
+
+    A background color (#ccff99)
+    Matching text and border (#333333)
+    Border is 1px
+    Links do not have underlines
+    Menu options are displayed in bold
+    The entire menu is indented to be visually appealing (~20px)
+    There is some white space between menu items
+*/
+
+
+/* Headers should use a reasonable serif font and generic family */
+
+
+/* The company name should always be bold, no matter where it appears */
+
+/* Styling for the company motto includes:
+
+    italicized and centered
+    a ridge border with an extra thick left border and color (#99aa33) 
+*/
+
+/* The introduction paragraph should be indented.  Other paragraphs should not. */
+
+/* The list of services should have a line spacing of 1.5 */
+
+
+
+
+
+
+
