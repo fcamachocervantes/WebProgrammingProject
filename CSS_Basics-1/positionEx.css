@@ -1,0 +1,52 @@
+#sidebar {
+    position: fixed;
+    top: 20px;
+    left: 5px;
+    max-width: 80px;
+    color: blue;
+    background-color: cyan;
+}
+
+h1 {
+    position: relative;
+    left: 80px;
+}
+
+p#shy {
+    z-index: -1;
+}
+
+div.not-important{
+    width: 110px;
+    height: 100px;
+    background-color: #00FF00;
+    overflow: hidden;
+}
+
+div.more-important{
+    width: 200px;
+    height: 80px;
+    background-color: pink;
+    position: relative;
+    top: -40px;
+    left: 80px;
+    overflow: visible;
+    z-index: -1;
+}
+
+div#lotsaText{
+    position: relative;
+    left: 50px;
+    background-color: orange;
+    max-width: 600px;
+}
+
+div.important{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    overflow: scroll;
+}
