@@ -2,6 +2,13 @@
 	Style for Unit 2, Part IV
 
 /* Styles here for the body */
+body {
+    background-color: #F4FFE4;
+    color: #333333;
+    font: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
 
 /* Styling for the wrapper and content includes
 
@@ -12,6 +19,15 @@
 	Set a minimum height (550 px) and width (600 px) so that scroll bars 
 	appear if the window size is too small.
 */
+#wrapper {
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    text-indent: 15px;
+    min-height: 550px;
+    min-width: 600px;
+}
 
 
 /* Styling for the header includes
@@ -22,7 +38,17 @@
     A rounded border (I used a color of #333333 and rounded 15px)
 	A logo on the right side (hint: use background-image... google!)
 */
-
+header {
+    background-color: #d5edb3;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    border: solid 2px #333333;
+    border-radius: 15px;
+    height: 80px;
+    background-image: url(turtle2.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+}
 
 /* Styling for the nav menu includes
 
@@ -34,26 +60,53 @@
     The entire menu is indented to be visually appealing (~20px)
     There is some white space between menu items
 */
+nav{
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    text-indent: 20px;
+    max-width: fit-content;
+    padding-left: 20px;
+}
 
-
+a{
+    background-color: #CCFF99;
+    color: #333333;
+    border: solid 1px #333333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px
+}
+    
 /* Headers should use a reasonable serif font and generic family */
-
+header h1 h2 h3 {
+    font: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* The company name should always be bold, no matter where it appears */
+.company_name {
+    font-weight: bold;
+}
 
 /* Styling for the company motto includes:
 
     italicized and centered
     a ridge border with an extra thick left border and color (#99aa33) 
 */
+.motto {
+    font-style: italic;
+    text-align: center;
+    border: ridge 10px #99aa33;
+    border-left: ridge 40px #99aa33;
+}
 
 /* The introduction paragraph should be indented.  Other paragraphs should not. */
+#intro {
+    text-indent: 20px;
+}
 
 /* The list of services should have a line spacing of 1.5 */
-
-
-
-
-
-
-
+#services {
+    line-height: 1.5em;
+}
