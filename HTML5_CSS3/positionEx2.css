@@ -1,0 +1,70 @@
+#sidebar {
+    position: fixed;
+    top: 65px;
+    right: 8px;
+    max-width: 80px;
+    color: blue;
+    background-color: cyan;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+    height: 40px;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+p#shy {
+    float: right;
+}
+
+#lotsaText {
+    position: relative;
+    left: 500px;
+    background-color: orange;
+    max-width: 100px;
+}
+
+.important {
+    position: absolute;
+    right: 200px;
+    top: 0px;
+    background-color: yellow;
+    height: 100px;
+    width: 150px;
+    overflow: scroll;
+}
+
+.moreimportant {
+    background-color: pink;
+    position: relative;
+    left: 30px;
+    top: -15px;
+    width: 200px;
+    display: none;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 3rem;
+    background-color: purple;
+}
+
+div.not-important{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #00FF00;
+}
+
+div.not-important > p{
+    color: red;
+    margin-top: .1em;
+    margin-bottom: 2em;
+}
