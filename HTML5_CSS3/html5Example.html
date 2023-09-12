@@ -6,33 +6,53 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Cyndi Rader">
 	<link rel="stylesheet" href="html5Example.css">
+	<link rel="stylesheet" href="nav.css">
+	<script src="https://kit.fontawesome.com/c513098c90.js" crossorigin="anonymous"></script>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+	</script>
 </head>
 <body>
+<nav class="topnav" id="myTopnav">
+	<a href="#home" class="active">Home</a>
+	<a href="https://elearning.mines.edu/courses/52444/pages/css-part-1-basics" target="_blank">Basics</a>
+	<a href="https://elearning.mines.edu/courses/52444/pages/css-part-2-box-model" target="_blank">Spacing</a>
+	<a href="https://elearning.mines.edu/courses/52444/pages/css-part-3-position" target="_blank">Positioning</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+</nav>
 <header> 
 	<h1>Learn CSS now!</h1>
 </header>
-<div id="menus">
-</div>
 <article>
 	<h2>Importance of CSS</h2>
 	<p>Anyone who wants to program web pages should have some 
-	understanding of CSS. Some reasons paraphrased from 
+	understanding of <span style="cursor:crosshair">CSS</span>. Some reasons paraphrased from 
 	<a href="https://bootcamp.ce.ucf.edu/blog/why-everyone-should-learn-html-css/">
 	bootcamp</a>:</p>
 	<ul>
-		<li>CSS is a fundamental part of the web</li>
+		<li><span style="cursor:crosshair">CSS</span> is a fundamental part of the web</li>
 		<li>You (or someone you know) may want to create your own site - be
 			an entrepeneur!</li>
 		<li>You can create <em>unique</em> websites - strut your stuff!</li>
 		<li>You can make more money - are you a full-stack developer?</li>
 	</ul>
 	<p>Another reason: it will challenge how you think about programming. 
-	CSS is NOT like other languages! Embrace it and you'll expand your
+	<span style="cursor:crosshair">CSS</span> is NOT like other languages! Embrace it and you'll expand your
 	flexibility.</p>
 </article>
 <article>
 	<h2>Why cats are so cool</h2>
-	<p>No offense to dogs (they're great too), but cats are just awesome. 
+	<p>No offense to dogs (they're great too), but cats are just awesome.
+	<i class="fas fa-cloud"></i>
 	<a href="https://pethelpful.com/cats/10-Reasons-Why-Cats-Are-Awesome">
 	Pethelpful</a> provides a list of 10 reasons:</p>
 	<ol>
@@ -55,8 +75,8 @@
 	</figure>
 </article>
 <aside>
-	<p>Hey, my name is [YOUR NAME], and here are some 
-	   thoughts I want to share with you. [SAY SOMETHING HERE] </p>
+	<p>Hey, my name is Paco, and here are some 
+	   thoughts I want to share with you. While cats are cool I think that dog are usually more playful and energetic </p>
 </aside>
 <footer>
 	<p>Examples are free to use. No &copy; - hope you enjoy!</p>
