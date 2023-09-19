@@ -1,0 +1,53 @@
+/* Create two columns using flexbox */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the canvas where an image will be displayed */
+#myCanvas {
+	border: 1px solid black;
+	background-color: white;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the card. Notice the use of variables, which are Part 2f */
+#theCard {
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	border: .5em solid var(--border-color);
+}
+
+/* A few more styling and layout options */
+#toField {
+	font-style: italic;
+}
+
+p {
+	margin-left: 1em;
+}
+
+.stacked {
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+

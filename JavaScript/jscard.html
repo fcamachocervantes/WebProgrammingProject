@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Greetings!</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="jsCard.css">
+	<link rel="stylesheet" href="colorSwitch.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>Create a Card</h1>
+
+<div class="row">
+  <div class="column" id="theCard">
+ 	<p>Dearest <span id="toField">Someone</span>,</p>
+	<p>I'm sending this card because the photo reminds me 
+	of <span class="you">you</span>.</p>
+	<div class="stacked">
+	<img id="thePicture" src="images/catInGlass.jpg" alt="card picture" 
+		class="center" ></img>
+	</div>
+	<p><span class="you">You</span> are the love of my life. Using the 
+	keyboard, move the kitty to the bottom of the canvas for a surprise.</p>
+	<div class="stacked">
+	<canvas id="myCanvas" width="300" height="200"></canvas>
+	</div>
+  </div>
+  <div class="column" style="background-color:lightGrey;">
+    <h2>Customize your card</h2>
+    <p><label for="to_field">To:</label>
+	<input type="text" id="to_field"></p>
+	<p>
+		<label for="picture">Picture</label>
+		<select id="picture">
+			<option value = "CatInGlass" selected>Cat In Glass</option>
+			<option value = "CatToothbrush">Cat Toothbrush</option>
+		  </select>
+	</p>
+	<p>Choose a color scheme</p>
+	<ul>
+		<li>
+			<input type="radio" id="cool" name="color_scheme" 
+				value="COOL" onclick="changeColor(this);" checked>
+			<label for="cool">Cool</label><br>
+			<div class="bullet">
+				<div class="line zero"></div>
+				<div class="line one"></div>
+				<div class="line two"></div>
+				<div class="line three"></div>
+				<div class="line four"></div>
+				<div class="line five"></div>
+				<div class="line six"></div>
+				<div class="line seven"></div>
+		  </div>											
+	  </li>
+	  <li>
+	
+	<input type="radio" id="warm" name="color_scheme" 
+		value="WARM" onclick="changeColor(this);">
+	<label for="warm">Warm</label><br>
+	<div class="bullet">
+        <div class="line zero"></div>
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+        <div class="line four"></div>
+        <div class="line five"></div>
+        <div class="line six"></div>
+        <div class="line seven"></div>
+      </div>
+	  </li>
+	  </ul>
+	</div>
+  </div>
+</div>
+	<script src="jsCard.js"></script>
+	<script src="colorSwitch.js"></script>
+</body>
+</html>
