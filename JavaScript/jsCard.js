@@ -5,6 +5,8 @@ const textOutput = document.getElementById("toField");
 const imageDropDown = document.getElementById("picture");
 const currentImage = document.getElementById("thePicture");
 
+const myCollection = document.getElementsByClassName("you");
+
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -38,6 +40,18 @@ function drawCatAndText() {
     const message = "Here Kitty";
     const messageWidth = ctx.measureText(message).width;
     const messageHeight = ctx.measureText(message).fontBoundingBoxDescent;
+
+    var diffx = canvasWidth - imageWidth;
+    var diffy = canvasHeight - imageHeight;
+
+    if(diffx - currentX <= stepX & diffy - currentY <= stepY) {
+        for(let i = 0; i < myCollection.length; i++) {
+            myCollection[i].style.color = "blue";
+            myCollection[i].style.fontSize = "larger";
+        }
+
+        alert("The cat reached the text!");
+    }
 
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     ctx.drawImage(image, currentX, currentY);   

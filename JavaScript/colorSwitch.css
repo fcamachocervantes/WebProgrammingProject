@@ -11,6 +11,11 @@
     --border-color: lightseagreen;
 }
 
+[data-theme="warm"] {
+  --font-color: rgb(139, 114, 46);
+  --bg-color: rgb(254, 255, 245);
+  --border-color: rgb(178, 32, 69);
+}
 
 /* Code below here implements the fancy radio button styling */
 
