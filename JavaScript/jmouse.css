@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
