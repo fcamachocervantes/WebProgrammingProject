@@ -1,0 +1,120 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% auto 10%;
+  background-color: gray;
+}
+
+header, footer {
+  grid-column: 1 / span 5;
+}
+
+main {
+  grid-column: 1 / span 3;
+}
+
+aside {
+  grid-column: span 2;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 0;
+}
+
+aside, main {
+  background: honeydew;
+  align-items: center;
+  display: block;
+  margin: 0.5em;
+}
+
+main {
+  margin: 0.5em;
+}
+
+aside {
+  margin: 0.25em;
+}
+
+header, footer {
+  height: 8vw;
+  background-color: mediumseagreen;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1, h2, p {
+  padding-left: 0.5em;
+}
+
+h1 {
+  font-size: 4vw;
+  color: white;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+p {
+  font-size: 2vw;
+}
+
+#questionText, #answerForm {
+  background-color: white;
+  min-height: 50px;
+  display: block;
+  margin: 1em;
+}
+
+#answerForm {
+  min-height: 100px;
+}
+
+input[type="radio"] {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+#checkAnswer {
+  margin: 0.25em;
+}
+
+#resultText {
+  color: green;
+  padding-left: 2em;
+}
+
+#otherQuestionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #99ffcf;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+/* styling for final animations */
+#gameOver {
+  height: 25px;
+  width: 50px;
+  position: absolute;
+  border-radius: 25%;
+}
+
+#gameOverText {
+  color: blue;
+  padding-left: 1em;
+  text-align: center;
+}
+
+/* colors for question history */
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}

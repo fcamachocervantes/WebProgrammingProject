@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quiz.css">
+    <title>Geography Trivia</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Test your knowledge of Geography</h1>
+    </header>
+    <main>
+      <div id="questionAndAnswer">
+        <h3>Question (select a category below)</h3>
+        <p id="questionText"></p>
+        <h3>Answer:</h3>
+        <form id="answerForm">
+          <input type="radio" id="true" value="true" />
+          <label for="true">True</label><br />
+          <input type="radio" id="false" value="false" />
+          <label for="false">False</label><br />
+          <input id="checkAnswer" type="submit" value="Check Answer" />
+          <p id="resultText"></p>
+        </form>
+      </div>
+      <div id="otherQuestionButtons">
+        <form>
+          <button name="italy">Italy</button>
+          <button name="mexico">Mexico</button>
+          <button name="japan">Japan</button>
+          <button name="us">United States</button>
+        </form>
+      </div>
+    </main>
+    <aside>
+      <h2>Questions History</h2>
+      <ul id="questionHistoryList"></ul>
+    </aside>
+    <footer id="footer">
+        <p>Created by Francisco to test your geography knowledge.</p>
+    </footer>
+  </body>
+</html>
