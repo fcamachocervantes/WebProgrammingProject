@@ -69,7 +69,7 @@ function setResultText(bool, questionName) {
   canSelectQuestion = true;
 
   //checking how many questions have been answered
-  if (numQuestionsAnswered === 1) {
+  if (numQuestionsAnswered === 4) {
     finalMessage();
   }
 }
