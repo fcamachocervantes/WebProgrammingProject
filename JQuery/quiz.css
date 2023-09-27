@@ -17,12 +17,6 @@ aside {
   grid-column: span 2;
 }
 
-body {
-  margin: 0 auto;
-  max-width: 56em;
-  padding: 0;
-}
-
 aside, main {
   background: honeydew;
   align-items: center;
@@ -83,11 +77,6 @@ input[type="radio"] {
   margin: 0.25em;
 }
 
-#resultText {
-  color: green;
-  padding-left: 2em;
-}
-
 #otherQuestionButtons {
   display: flex;
   align-items: center;
@@ -111,10 +100,38 @@ input[type="radio"] {
   text-align: center;
 }
 
-/* colors for question history */
 .correct {
   color: green;
 }
 .incorrect {
   color: red;
+}
+
+.container {
+  position: relative;
+}
+
+.box {
+  width: 2em;
+  height: 2em;
+  background-color: #00ffaa;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.message {
+  font-size: 24px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-column: span 5;
+  }
+  
+  aside {
+    grid-column: span 5;
+  }
 }

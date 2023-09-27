@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="quiz.css" />
+    <script type="text/javascript" src="quiz.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Geography Trivia</title>
   </head>
   <body>
@@ -16,29 +18,77 @@
         <p id="questionText"></p>
         <h3>Answer:</h3>
         <form id="answerForm">
-          <input type="radio" id="true" value="true" />
-          <label for="true">True</label><br />
-          <input type="radio" id="false" value="false" />
-          <label for="false">False</label><br />
-          <input id="checkAnswer" type="submit" value="Check Answer" />
+          <input
+            type="radio"
+            name="answer"
+            value="true"
+            onclick="allowAnswer();"
+          />
+          <label for="true">True</label>
+          <br />
+          <input
+            type="radio"
+            name="answer"
+            value="false"
+            onclick="allowAnswer();"
+          />
+          <label for="false">False</label>
+          <br />
+          <input
+            id="checkAnswer"
+            type="button"
+            value="Check Answer"
+            onclick="submitAnswer()"
+            disabled
+          />
           <p id="resultText"></p>
         </form>
       </div>
-      <div id="otherQuestionButtons">
-        <form>
-          <button name="italy">Italy</button>
-          <button name="mexico">Mexico</button>
-          <button name="japan">Japan</button>
-          <button name="us">United States</button>
-        </form>
-      </div>
+      <form id="otherQuestionButtons">
+        <button
+          id="Italy"
+          type="button"
+          value="Italy"
+          onclick="changeQuestion(this); allowChanging(false);"
+        >
+          Italy
+        </button>
+        <button
+          id="Mexico"
+          type="button"
+          value="Mexico"
+          onclick="changeQuestion(this); allowChanging(false);"
+        >
+          Mexico
+        </button>
+        <button
+          id="Japan"
+          type="button"
+          value="Japan"
+          onclick="changeQuestion(this); allowChanging(false);"
+        >
+          Japan
+        </button>
+        <button
+          id="UnitedStates"
+          type="button"
+          value="UnitedStates"
+          onclick="changeQuestion(this); allowChanging(false);"
+        >
+          United States
+        </button>
+      </form>
     </main>
     <aside>
       <h2>Questions History</h2>
       <ul id="questionHistoryList"></ul>
+      <div class="container">
+        <div class="box"></div>
+        <div class="message">That's all folks!</div>
+      </div>
     </aside>
     <footer id="footer">
-        <p>Created by Francisco to test your geography knowledge.</p>
+      <p>Created by Francisco to test your geography knowledge.</p>
     </footer>
   </body>
 </html>

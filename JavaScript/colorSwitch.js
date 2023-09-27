@@ -1,5 +1,3 @@
-
-
 function changeColor(event) {
     if(event.value === "WARM") {
         document.documentElement.setAttribute("data-theme", event.id);
