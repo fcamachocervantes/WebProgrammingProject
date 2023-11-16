@@ -1,0 +1,33 @@
+.adminContent {
+    overflow: hidden;
+    background-color: rgb(207, 230, 255);
+    padding: 1em;
+}
+
+table {
+    width: 80%;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.dbContainer {
+    background-color: rgb(207, 230, 255);
+}
+
+.orders {
+    border-top: 5px solid #046daa;
+    border-bottom: 5px solid #046daa;
+}

@@ -1,0 +1,191 @@
+#purchaseForm {
+    padding: 2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.infoBox {
+    display: grid;
+    padding: 0.75em;
+    width: 24em;
+    border: 1px black solid;
+    background-color: rgb(236, 244, 255);
+}
+
+.floatingLabel {
+    left: 1em;
+    top: 1.5em;
+    position: relative;
+    color: #f2f2f2;
+    background: #046daa;
+    padding: 0.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#switchInfo {
+    grid-template-rows: repeat(5, 1fr);
+    padding-top: 2em;
+}
+
+#switchInfo>li {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#inactive {
+    position: relative;
+    width: fit-content;
+    right: 15%;
+}
+
+#purchaseInfo {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#purchaseInfo>li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+li>select {
+    width: 95%;
+    text-align: center;
+}
+
+#makeDonation {
+    padding-left: 0;
+}
+
+#makeDonation>p {
+    margin: 0;
+}
+
+#addSwitchButton {
+    position: static;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+#updateSwitchButton {
+    position: static;
+    margin-left: 3em;
+    padding: 0.5em;
+}
+
+#deleteButton {
+    color: #f2f2f2;
+    background: #aa0404;
+    position: static;
+    margin-left: 3em;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#right {
+    height: 420px;
+    width: 30em;
+}
+
+table,
+td,
+th,
+tr {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+td,
+th,
+tr {
+    padding: 0.5em;
+}
+
+.adminProducts {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% auto 10%;
+    background-color: rgb(207, 230, 255);
+}
+
+.tableSection {
+    padding-left: 1em;
+    grid-column: 1/4;
+}
+
+.productTable {
+    display: block;
+    height: 100px;
+    overflow-y: auto;
+}
+
+.addProductForm {
+    grid-column: 4/6;
+    margin-right: 2em;
+}
+
+img {
+    max-width: 100%;
+    top: 50%;
+}
+
+img::before {
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 50%;
+}
+
+.productImage>p {
+    color: red;
+    margin-left: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+    .infoBox {
+        width: 20em;
+    }
+
+    .purchaseInfo {
+        grid-column: 1 / span 1;
+    }
+
+    .productImage {
+        grid-column: span 4;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 481px) {
+    .infoBox {
+        width: auto;
+    }
+
+    .purchaseInfo {
+        grid-column: span 4;
+    }
+
+    .productImage {
+        grid-column: span 5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .infoBox {
+        width: auto;
+    }
+
+    .purchaseInfo {
+        grid-column: span 5;
+    }
+
+    .productImage {
+        grid-column: span 5;
+    }
+}

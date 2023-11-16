@@ -1,0 +1,150 @@
+form {
+  padding: 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.infoBox {
+  display: grid;
+  padding: 0.75em;
+  width: 24em;
+  border: 1px black solid;
+  background-color: rgb(236, 244, 255);
+}
+
+.floatingLabel {
+  left: 1em;
+  top: 1.5em;
+  position: relative;
+  color: #f2f2f2;
+  background: #046daa;
+  padding: 0.2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+#personalInfo {
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 2em;
+}
+
+#personalInfo > li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#purchaseInfo {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#purchaseInfo > li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+li > select {
+  width: 95%;
+  text-align: center;
+}
+
+#makeDonation {
+  padding-left: 0;
+}
+
+#makeDonation > p {
+  margin: 0;
+}
+
+#purchaseButton {
+  position: static;
+  padding: 0.5em;
+}
+
+.storeBody {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 10% auto 10%;
+  background-color: rgb(207, 230, 255);
+}
+
+.purchaseInfo {
+  grid-column: 1 / span 2;
+}
+
+.productImage {
+  grid-column: span 3;
+  overflow: hidden;
+  padding: 2em;
+  align-content: center;
+}
+
+img {
+  max-width: 100%;
+  top: 50%;
+}
+
+img::before {
+  text-align: center;
+  position: relative;
+  left: 35%;
+  top: 50%;
+}
+
+.purchaseInfo,
+.productImage {
+  align-items: center;
+  display: block;
+}
+
+.productImage > p {
+  color: red;
+  margin-left: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .infoBox {
+    width: 20em;
+  }
+
+  .purchaseInfo {
+    grid-column: 1 / span 1;
+  }
+
+  .productImage {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 481px) {
+  .infoBox {
+    width: auto;
+  }
+
+  .purchaseInfo {
+    grid-column: span 4;
+  }
+
+  .productImage {
+    grid-column: span 5;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .infoBox {
+    width: auto;
+  }
+
+  .purchaseInfo {
+    grid-column: span 5;
+  }
+
+  .productImage {
+    grid-column: span 5;
+  }
+}
